@@ -1,0 +1,86 @@
+\hypertarget{structHuffmanAlgorithm}{}\doxysection{Huffman\+Algorithm Struct Reference}
+\label{structHuffmanAlgorithm}\index{HuffmanAlgorithm@{HuffmanAlgorithm}}
+
+
+Execute the Huffman Algorithm.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structHuffmanAlgorithm_aad2175df4049fae4276e48f54099ab1c}{encode}} (\mbox{\hyperlink{structNode}{Node}} $\ast$root, string str, unordered\+\_\+map$<$ char, string $>$ \&huffman\+Code)
+\begin{DoxyCompactList}\small\item\em Traverse the Huffman Tree and store Huffman Codes in a map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structHuffmanAlgorithm_a566fe71994506e9d5a3137868e668e6d}{decode}} (\mbox{\hyperlink{structNode}{Node}} $\ast$root, int \&index, string str)
+\begin{DoxyCompactList}\small\item\em Traverse the Huffman Tree and decode the encoded string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structHuffmanAlgorithm_a2facd0ce793dc060e2e49f4cbe7ffde9}{build\+Huffman\+Tree}} (string text)
+\begin{DoxyCompactList}\small\item\em Builds Huffman Tree and decode given input text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structHuffmanAlgorithm_a5bc8dee4b411a6909ed947cc3a8aaf09}\label{structHuffmanAlgorithm_a5bc8dee4b411a6909ed947cc3a8aaf09}} 
+static \mbox{\hyperlink{structNode}{Node}} $\ast$ {\bfseries get\+Node} (char ch, int freq, \mbox{\hyperlink{structNode}{Node}} $\ast$left, \mbox{\hyperlink{structNode}{Node}} $\ast$right)
+\begin{DoxyCompactList}\small\item\em Function to allocate a new tree node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Execute the Huffman Algorithm. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structHuffmanAlgorithm_a2facd0ce793dc060e2e49f4cbe7ffde9}\label{structHuffmanAlgorithm_a2facd0ce793dc060e2e49f4cbe7ffde9}} 
+\index{HuffmanAlgorithm@{HuffmanAlgorithm}!buildHuffmanTree@{buildHuffmanTree}}
+\index{buildHuffmanTree@{buildHuffmanTree}!HuffmanAlgorithm@{HuffmanAlgorithm}}
+\doxysubsubsection{\texorpdfstring{buildHuffmanTree()}{buildHuffmanTree()}}
+{\footnotesize\ttfamily void Huffman\+Algorithm\+::build\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Builds Huffman Tree and decode given input text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structHuffmanAlgorithm_a566fe71994506e9d5a3137868e668e6d}\label{structHuffmanAlgorithm_a566fe71994506e9d5a3137868e668e6d}} 
+\index{HuffmanAlgorithm@{HuffmanAlgorithm}!decode@{decode}}
+\index{decode@{decode}!HuffmanAlgorithm@{HuffmanAlgorithm}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily void Huffman\+Algorithm\+::decode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{root,  }\item[{int \&}]{index,  }\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Traverse the Huffman Tree and decode the encoded string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em index} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structHuffmanAlgorithm_aad2175df4049fae4276e48f54099ab1c}\label{structHuffmanAlgorithm_aad2175df4049fae4276e48f54099ab1c}} 
+\index{HuffmanAlgorithm@{HuffmanAlgorithm}!encode@{encode}}
+\index{encode@{encode}!HuffmanAlgorithm@{HuffmanAlgorithm}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily void Huffman\+Algorithm\+::encode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{root,  }\item[{string}]{str,  }\item[{unordered\+\_\+map$<$ char, string $>$ \&}]{huffman\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Traverse the Huffman Tree and store Huffman Codes in a map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em str} & \\
+\hline
+{\em huffman\+Code} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main.\+cpp\end{DoxyCompactItemize}
